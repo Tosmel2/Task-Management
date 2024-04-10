@@ -1,0 +1,24 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "TODO APP BACKEND APPLICATION",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon backend/app.js",
+    "start": "node backend/app.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
